@@ -1,0 +1,28 @@
+<div class="container-slim">
+	<md-card>
+		<md-card-header>
+			<md-card-header-text>
+				<span class="md-subhead"><h3>Criar pedido</h3></span>
+			</md-card-header-text>
+		</md-card-header>
+		<md-card-content>
+
+			<form data-ng-submit="vm.save()" name="orderForm">
+				<div layout="row" layout-wrap>
+					<div flex=100>
+            <input-text name="orderDescription" is-required="true" model="vm.order.description" label="Pedido" max-length="140" md-class="md-block"></input-text>
+					</div>
+					<div flex=100>
+            <input-text name="client" is-required="true" model="vm.order.client" label="Identificação do cliente" max-length="140" md-class="md-block">Concluido</input-text>
+					</div>
+				</div>
+				<div layout="row" layout-align="end">
+					<md-button type="submit" class="md-raised md-primary" data-ng-disabled="orderForm.$invalid">Salvar</md-button>
+				</div>
+			</form>
+
+		</md-card-content>
+	</md-card>
+
+
+</div>

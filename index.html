@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+
+<head>
+	<title>Start</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- bower:css -->
+	<link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
+	<!-- endbower -->
+	<link rel="stylesheet" href="app/style/main.css" />
+</head>
+
+<body data-ng-controller="IndexController as vm">
+
+<md-nav-bar>
+  <md-nav-item md-nav-click="vm.goto('order-create')" name="page1">CRIAR PEDIDOS</md-nav-item>
+  <md-nav-item md-nav-click="vm.goto('order-list')" name="page1">LISTAR PEDIDOS</md-nav-item>
+  <md-nav-item md-nav-click="vm.logout()" name="page1">Logout</md-nav-item>
+</md-nav-bar>
+
+	<ui-view></ui-view>
+</body>
+
+<!-- bower:js -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-aria/angular-aria.js"></script>
+<script src="bower_components/angular-messages/angular-messages.js"></script>
+<script src="bower_components/angular-material/angular-material.js"></script>
+<script src="bower_components/ng-material-facade/src/material-facade.module.js"></script>
+<script src="bower_components/ng-material-facade/src/config-provider/config-material-facade.provider.js"></script>
+<script src="bower_components/ng-material-facade/src/input-text/input-text.directive.js"></script>
+<script src="bower_components/ng-material-facade/src/input-email/input-email.directive.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/firebase/firebase.js"></script>
+<script src="bower_components/angularfire/dist/angularfire.js"></script>
+<!-- endbower -->
+
+<script src="app/app.js"></script>
+<script src="index.controller.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/3.0.4/firebase.js"></script>
+
+<!-- auth module -->
+<script src="app/modules/authentication/authentication.module.js"></script>
+<script src="app/modules/authentication/authentication.service.js"></script>
+<script src="app/modules/authentication/login.controller.js"></script>
+
+<!-- config module -->
+<script src="app/modules/config/config.module.js"></script>
+<script src="app/modules/config/config.routes.js"></script>
+<script src="app/modules/config/config.theme.js"></script>
+<script src="app/modules/config/config.angular-facade.js"></script>
+<script src="app/modules/config/config.firebase.js"></script>
+
+<!-- user module -->
+<script src="app/modules/user/user.module.js"></script>
+<script src="app/modules/user/user.controllers.js"></script>
+<script src="app/modules/user/user.service.js"></script>
+<script src="app/modules/user/user-create.controller.js"></script>
+
+<!-- utils module -->
+<script src="app/modules/utils/utils.module.js"></script>
+<script src="app/modules/utils/message.service.js"></script>
+
+<!-- order module -->
+<script src="app/modules/order/order.module.js"></script>
+<script src="app/modules/order/order-create.controller.js"></script>
+<script src="app/modules/order/order-list.controller.js"></script>
+<script src="app/modules/order/oder.services.js"></script>
+
+<!-- firebase start -->
+<script>
+  var config = {
+    apiKey: "AIzaSyCNJpA5nuC2IsVgwyTXkwqEJSV0PbF1Kgs",
+    authDomain: "florencio.firebaseapp.com",
+    databaseURL: "https://florencio.firebaseio.com",
+    storageBucket: "florencio.appspot.com",
+    messagingSenderId: "604735135641"
+  };
+  firebase.initializeApp(config);
+</script>
+
+</html>

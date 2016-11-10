@@ -1,0 +1,19 @@
+<div class="container-slim">
+
+	<div data-ng-repeat="order in vm.orders | orderBy: 'date'">
+		<md-card>
+			<md-card-header>
+				<md-card-header-text>
+					Pedido realizado em: {{vm.formatDate(order.date)}}
+				</md-card-header-text>
+			</md-card-header>
+			<md-card-content>
+				<p>{{order.description}}</p>
+			</md-card-content>
+			<div layout="row" layout-align="end">
+				<md-button type="submit" class="md-raised md-warn" data-ng-click="vm.remove(order)">Remover</md-button>
+			</div>
+		</md-card>
+	</div>
+
+</div>
