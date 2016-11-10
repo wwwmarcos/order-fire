@@ -12,13 +12,19 @@
 
 <body data-ng-controller="IndexController as vm">
 
-<md-nav-bar>
-  <md-nav-item md-nav-click="vm.goto('order-create')" name="page1">CRIAR PEDIDOS</md-nav-item>
-  <md-nav-item md-nav-click="vm.goto('order-list')" name="page1">LISTAR PEDIDOS</md-nav-item>
-  <md-nav-item md-nav-click="vm.logout()" name="page1">Logout</md-nav-item>
-</md-nav-bar>
+	<md-nav-bar>
+		<md-nav-item md-nav-click="vm.goto('order-create')" name="page1">CRIAR PEDIDOS</md-nav-item>
+		<md-nav-item md-nav-click="vm.goto('order-list')" name="page1">LISTAR PEDIDOS</md-nav-item>
+		<md-nav-item md-nav-click="vm.logout()" name="page1">Logout</md-nav-item>
+		<md-nav-item md-nav-click="" name="page1">
+			<a class="github-button" href="https://github.com/marcosflorencio/order-fire" data-icon="octicon-star" data-style="mega"
+				aria-label="Star marcosflorencio/order-fire on GitHub">Star</a>
+		</md-nav-item>
+	</md-nav-bar>
 
 	<ui-view></ui-view>
+
+
 </body>
 
 <!-- bower:js -->
@@ -81,5 +87,7 @@
   };
   firebase.initializeApp(config);
 </script>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
 
 </html>
