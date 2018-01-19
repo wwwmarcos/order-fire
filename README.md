@@ -3,4 +3,4 @@ App simples (ainda em cosntrução) de pedidos com a finalidade de aprender sobr
 
 ![alt tag](http://i.giphy.com/3oriO0lYPOG9RplIQM.gif)
 
-# [Demo](https://marcosflorencio.js.org/order-fire)
+# [Demo](https://eptaccio.github.io/order-fire)
