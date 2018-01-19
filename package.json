@@ -2,8 +2,7 @@
   "name": "oder-fire",
   "version": "0.0.1",
   "dependencies": {
-    "bower": "^1.7.9",
-    "grunt": "^1.0.1"
+
   },
   "engines": {
     "node": "0.12.2"
@@ -11,6 +10,8 @@
   "keywords": [],
   "license": "MIT",
   "devDependencies": {
-    "grunt-wiredep": "^3.0.1"
+    "grunt-wiredep": "^3.0.1",
+    "bower": "^1.7.9",
+    "grunt": "^1.0.1"
   }
 }
